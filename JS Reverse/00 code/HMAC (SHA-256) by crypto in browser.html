@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HMAC SHA-256 示例</title>
+</head>
+<body>
+    <script>
+        /**
+         * 将字符串转换为 Uint8Array
+         * @param {string} str
+         * @returns {Uint8Array}
+         */
+        function stringToUint8Array(str) {
+            return new TextEncoder().encode(str);
+        }
+
+        /**
+         * 将 ArrayBuffer 转换为 Base64 字符串
+         * @param {ArrayBuffer} buffer
+         * @returns {string}
+         */
+        function arrayBufferToBase64(buffer) {
+            const bytes = new Uint8Array(buffer);
+            let binary = '';
+            bytes.forEach(byte => binary += String.fromCharCode(byte));
+            return btoa(binary);
+        }
+
+        /**
+         * 生成 HMAC (SHA-256) 签名
+         * @param {string} secretKey - 密钥
+         * @param {string} data - 待签名数据
+         * @returns {Promise<string>} - 返回 Base64 编码的签名
+         */
+        function generateHmacSHA256(secretKey, data) {
+            return crypto.subtle.importKey(
+                "raw",
+                stringToUint8Array(secretKey),
+                { name: "HMAC", hash: "SHA-256" },
+                false,
+                ["sign"]
+            )
+            .then(key => {
+                return crypto.subtle.sign(
+                    "HMAC",
+                    key,
+                    stringToUint8Array(data)
+                );
+            })
+            .then(signature => {
+                return arrayBufferToBase64(signature);
+            });
+        }
+
+        // 示例用法
+        const secretKey = "your-secret-key";
+        const data = "/api/explorer/v1/btc/transactionsNoRestrict?offset=40&limit=20&t=1732173775260";
+
+        generateHmacSHA256(secretKey, data)
+            .then(signature => {
+                console.log("HMAC SHA-256 Signature:", signature);
+                /*
+                    示例输出:
+                    HMAC SHA-256 Signature: QvEc4ghsL0qOqH249yLG7v+wLCSMgyhsVA6U6nVQi2I=
+                */
+            })
+            .catch(error => {
+                console.error("生成签名时出错:", error);
+            });
+    </script>
+</body>
+</html>

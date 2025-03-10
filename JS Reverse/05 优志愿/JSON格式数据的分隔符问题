@@ -1,0 +1,5 @@
+优志愿案例：
+    使用json格式数据当作参数发送请求时，requests库自带的json_data参数会自动将字典dumps成json字符串，但是会出现多处空白的问题。
+    这里建议使用自带的data参数，发送请求前使用带有分隔符参数的dumps函数，如下所示：
+        json_data = json.dumps(json_data, separators=(",", ":"))
+        然后使用json_data作为data参数传进去。

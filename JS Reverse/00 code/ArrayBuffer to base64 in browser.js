@@ -1,0 +1,2 @@
+s = btoa(String.fromCharCode.apply(String, G(new Uint8Array(a))))
+    //这是将一个 Uint8Array 经过函数 G 处理后，转换为一个 Base64 编码的字符串。而a是一个二进制数据源，以ArrayBuffer表示。ArrayBuffer可以理解为底层数据，而Uint8Array视为一个视图，用来表达ArrayBuffer的
