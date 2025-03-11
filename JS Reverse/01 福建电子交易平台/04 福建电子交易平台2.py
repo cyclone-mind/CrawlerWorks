@@ -1,7 +1,6 @@
 import requests
 from hashlib import md5
 import time
-import requests
 import base64
 import json
 from Crypto.Util.Padding import pad, unpad
