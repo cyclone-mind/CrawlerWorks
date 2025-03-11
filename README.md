@@ -54,5 +54,6 @@ MIT License - 查看 [LICENSE](LICENSE) 文件了解更多信息。
 ## 联系方式
 
 - 作者：Shouyu Zhou
-- GitHub：[CycloneMind](https://github.com/CycloneMind/CrawlerWorks)
+- GitHub：[CycloneMind](https://github.com/CycloneMind/)
+- Mail: [zhousy953933@gmail.com](zhousy953933@gmail.com)
   
