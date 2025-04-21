@@ -30,6 +30,6 @@ const visitor = {
 traverse(ast,visitor)
 
 // 将处理后的ast转换为js代码(反混淆后的代码)
-let {code} = generator(ast);
+let {code} = generator(ast, { compact: false });
 // 保存代码
 fs.writeFile('decode.js', code, (err)=>{});

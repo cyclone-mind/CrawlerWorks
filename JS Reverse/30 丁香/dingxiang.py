@@ -49,7 +49,7 @@ def spider(keyword,page):
         'noncestr': u(8,),
         # 'sign': 'f8d321b20903d84416c79468b6d0a86949d27f2d',
     }
-    data = f'appSignKey=4bTogwpz7RzNO2VTFtW7zcfRkAE97ox6ZSgcQi7FgYdqrHqKB7aGqEZ4o7yssa2aEXoV3bQwh12FFgVNlpyYk2Yjm9d2EZGeGu3&keyword={params['keyword']}&noncestr={params['noncestr']}&pageNum={params['pageNum']}&pageSize={params['pageSize']}&sectionCode=0&serverTimestamp={params['serverTimestamp']}&timestamp={params['timestamp']}'
+    data = f"appSignKey=4bTogwpz7RzNO2VTFtW7zcfRkAE97ox6ZSgcQi7FgYdqrHqKB7aGqEZ4o7yssa2aEXoV3bQwh12FFgVNlpyYk2Yjm9d2EZGeGu3&keyword={params['keyword']}&noncestr={params['noncestr']}&pageNum={params['pageNum']}&pageSize={params['pageSize']}&sectionCode=0&serverTimestamp={params['serverTimestamp']}&timestamp={params['timestamp']}"
 
     sign = execjs.compile(open('./dingxiang.js', 'r', encoding='utf-8').read()).call('s',data)
     # print('sign:::',sign)

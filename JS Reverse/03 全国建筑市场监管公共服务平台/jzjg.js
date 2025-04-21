@@ -20,16 +20,16 @@ var f = {
 
 
 function b(t) {
-            var e = cryptoJs.enc.Hex.parse(t)
-              , n = cryptoJs.enc.Base64.stringify(e)
-              , a = cryptoJs.AES.decrypt(n, f, {
-                iv: m,
-                mode: cryptoJs.mode.CBC,
-                padding: cryptoJs.pad.Pkcs7
-            })
-              , r = a.toString(cryptoJs.enc.Utf8);
-            return r.toString()
-        }
+    var e = cryptoJs.enc.Hex.parse(t)
+        , n = cryptoJs.enc.Base64.stringify(e)
+        , a = cryptoJs.AES.decrypt(n, f, {
+        iv: m,
+        mode: cryptoJs.mode.CBC,
+        padding: cryptoJs.pad.Pkcs7
+    })
+        , r = a.toString(cryptoJs.enc.Utf8);
+    return r.toString()
+}
 
 
 // var e = JSON.parse(b(data))

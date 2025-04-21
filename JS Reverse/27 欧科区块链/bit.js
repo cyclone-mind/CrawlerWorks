@@ -1,8 +1,8 @@
 const crypto = require("crypto")
-// let url = "/api/explorer/v1/btc/transactionsNoRestrict?offset=40&limit=20&t=1732173775260"
+let url = "/api/explorer/v1/btc/transactionsNoRestrict?offset=40&limit=20&t=1732173775260"
 let fetchConfig = 'get'
 
-url = process.argv[2]
+// url = process.argv[2]
 
 
 function M(e, t) {
@@ -38,10 +38,10 @@ function Ke() {
     Ke = function () {
         return r
     }
-    ;
+        ;
     var e, r = {}, n = Object.prototype, o = n.hasOwnProperty, i = Object.defineProperty || function (e, t, r) {
-            e[t] = r.value
-        }
+        e[t] = r.value
+    }
         , a = "function" == typeof Symbol ? Symbol : {}, c = a.iterator || "@@iterator",
         u = a.asyncIterator || "@@asyncIterator", s = a.toStringTag || "@@toStringTag";
 
@@ -105,8 +105,8 @@ function Ke() {
 
     var x = {};
     l(x, c, (function () {
-            return this
-        }
+        return this
+    }
     ));
     var k = Object.getPrototypeOf
         , _ = k && k(k(T([])));
@@ -115,11 +115,11 @@ function Ke() {
 
     function j(e) {
         ["next", "throw", "return"].forEach((function (t) {
-                l(e, t, (function (e) {
-                        return this._invoke(t, e)
-                    }
-                ))
+            l(e, t, (function (e) {
+                return this._invoke(t, e)
             }
+            ))
+        }
         ))
     }
 
@@ -130,18 +130,18 @@ function Ke() {
                 var l = s.arg
                     , f = l.value;
                 return f && "object" == t(f) && o.call(f, "__await") ? r.resolve(f.__await).then((function (e) {
-                        n("next", e, c, u)
-                    }
+                    n("next", e, c, u)
+                }
                 ), (function (e) {
-                        n("throw", e, c, u)
-                    }
+                    n("throw", e, c, u)
+                }
                 )) : r.resolve(f).then((function (e) {
-                        l.value = e,
-                            c(l)
-                    }
+                    l.value = e,
+                        c(l)
+                }
                 ), (function (e) {
-                        return n("throw", e, c, u)
-                    }
+                    return n("throw", e, c, u)
+                }
                 ))
             }
             u(s.arg)
@@ -152,8 +152,8 @@ function Ke() {
             value: function (e, t) {
                 function o() {
                     return new r((function (r, o) {
-                            n(e, t, r, o)
-                        }
+                        n(e, t, r, o)
+                    }
                     ))
                 }
 
@@ -176,7 +176,7 @@ function Ke() {
                 }
             }
             for (n.method = i,
-                     n.arg = a; ;) {
+                n.arg = a; ;) {
                 var c = n.delegate;
                 if (c) {
                     var u = I(c, n);
@@ -191,7 +191,7 @@ function Ke() {
                 else if ("throw" === n.method) {
                     if (o === d)
                         throw o = h,
-                            n.arg;
+                        n.arg;
                     n.dispatchException(n.arg)
                 } else
                     "return" === n.method && n.abrupt("return", n.arg);
@@ -199,7 +199,7 @@ function Ke() {
                 var s = p(t, r, n);
                 if ("normal" === s.type) {
                     if (o = n.done ? h : v,
-                    s.arg === b)
+                        s.arg === b)
                         continue;
                     return {
                         value: s.arg,
@@ -218,11 +218,11 @@ function Ke() {
             , o = t.iterator[n];
         if (o === e)
             return r.delegate = null,
-            "throw" === n && t.iterator.return && (r.method = "return",
-                r.arg = e,
-                I(t, r),
-            "throw" === r.method) || "return" !== n && (r.method = "throw",
-                r.arg = new TypeError("The iterator does not provide a '" + n + "' method")),
+                "throw" === n && t.iterator.return && (r.method = "return",
+                    r.arg = e,
+                    I(t, r),
+                    "throw" === r.method) || "return" !== n && (r.method = "throw",
+                        r.arg = new TypeError("The iterator does not provide a '" + n + "' method")),
                 b;
         var i = p(o, t.iterator, r.arg);
         if ("throw" === i.type)
@@ -233,13 +233,13 @@ function Ke() {
         var a = i.arg;
         return a ? a.done ? (r[t.resultName] = a.value,
             r.next = t.nextLoc,
-        "return" !== r.method && (r.method = "next",
-            r.arg = e),
+            "return" !== r.method && (r.method = "next",
+                r.arg = e),
             r.delegate = null,
             b) : a : (r.method = "throw",
-            r.arg = new TypeError("iterator result is not an object"),
-            r.delegate = null,
-            b)
+                r.arg = new TypeError("iterator result is not an object"),
+                r.delegate = null,
+                b)
     }
 
     function O(e) {
@@ -247,8 +247,8 @@ function Ke() {
             tryLoc: e[0]
         };
         1 in e && (t.catchLoc = e[1]),
-        2 in e && (t.finallyLoc = e[2],
-            t.afterLoc = e[3]),
+            2 in e && (t.finallyLoc = e[2],
+                t.afterLoc = e[3]),
             this.tryEntries.push(t)
     }
 
@@ -277,15 +277,15 @@ function Ke() {
             if (!isNaN(r.length)) {
                 var i = -1
                     , a = function t() {
-                    for (; ++i < r.length;)
-                        if (o.call(r, i))
-                            return t.value = r[i],
-                                t.done = !1,
-                                t;
-                    return t.value = e,
-                        t.done = !0,
-                        t
-                };
+                        for (; ++i < r.length;)
+                            if (o.call(r, i))
+                                return t.value = r[i],
+                                    t.done = !1,
+                                    t;
+                        return t.value = e,
+                            t.done = !0,
+                            t
+                    };
                 return a.next = a
             }
         }
@@ -322,28 +322,28 @@ function Ke() {
         ,
         j(E.prototype),
         l(E.prototype, u, (function () {
-                return this
-            }
+            return this
+        }
         )),
         r.AsyncIterator = E,
         r.async = function (e, t, n, o, i) {
             void 0 === i && (i = Promise);
             var a = new E(f(e, t, n, o), i);
             return r.isGeneratorFunction(t) ? a : a.next().then((function (e) {
-                    return e.done ? e.value : a.next()
-                }
+                return e.done ? e.value : a.next()
+            }
             ))
         }
         ,
         j(S),
         l(S, s, "Generator"),
         l(S, c, (function () {
-                return this
-            }
+            return this
+        }
         )),
         l(S, "toString", (function () {
-                return "[object Generator]"
-            }
+            return "[object Generator]"
+        }
         )),
         r.keys = function (e) {
             var t = Object(e)
@@ -396,8 +396,8 @@ function Ke() {
                     return c.type = "throw",
                         c.arg = t,
                         r.next = n,
-                    o && (r.method = "next",
-                        r.arg = e),
+                        o && (r.method = "next",
+                            r.arg = e),
                         !!o
                 }
 
@@ -479,7 +479,7 @@ function Ke() {
                     resultName: r,
                     nextLoc: n
                 },
-                "next" === this.method && (this.arg = e),
+                    "next" === this.method && (this.arg = e),
                     b
             }
         },
@@ -501,147 +501,6 @@ function Fe(e) {
         var t = this
             , r = arguments;
         return new Promise((function (n, o) {
-                var i = e.apply(t, r);
-
-                function a(e) {
-                    Ue(i, n, o, a, c, "next", e)
-                }
-
-                function c(e) {
-                    Ue(i, n, o, a, c, "throw", e)
-                }
-
-                a(void 0)
-            }
-        ))
-    }
-}
-
-function e(t) {
-    var r, n, o, i, a, c, u, s, l, f, p, d;
-    return Ke().wrap((function (e) {
-            for (; ;)
-                switch (e.prev = e.next) {
-                    case 0:
-                        return r = t.url,
-                            n = t.fetchConfig,
-                            o = t.timestampForTest,
-                            i = t.tokenForTest,
-                            a = function () {
-                                return crypto.randomUUID ? crypto.randomUUID() : (new Date).getTime()
-                            }
-                            ,
-                            c = function () {
-                                var e = Fe(Ke().mark((function e(t) {
-                                        var r, n, i, a, c, u, s, l, f, p, d;
-                                        return Ke().wrap((function (e) {
-                                                for (; ;)
-                                                    switch (e.prev = e.next) {
-                                                        case 0:
-                                                            return r = "",
-                                                                e.next = 3,
-                                                                crypto.subtle.digest("SHA-256", (new TextEncoder).encode(t));
-                                                        case 3:
-                                                            for (n = e.sent,
-                                                                     i = Array.from(new Uint8Array(n)),
-                                                                     a = i.map((function (e) {
-                                                                             return e.toString(16).padStart(2, "0")
-                                                                         }
-                                                                     )).join(""),
-                                                                     c = Date.now(),
-                                                                     u = o || Math.floor(c / 1e3),
-                                                                     s = Math.floor(u / 600 % 32),
-                                                                     l = Math.floor(u / 3600 % 32),
-                                                                     f = 0; f < 32; f++)
-                                                                p = a[(s + (l + f) * f) % 32],
-                                                                    r += p;
-                                                            return e.next = 13,
-                                                                crypto.subtle.importKey("raw", (new TextEncoder).encode(r), {
-                                                                    name: "HMAC",
-                                                                    hash: "SHA-256"
-                                                                }, !1, ["sign"]);
-                                                        case 13:
-                                                            return d = e.sent,
-                                                                e.abrupt("return", {
-                                                                    key: d,
-                                                                    timestamp: c
-                                                                });
-                                                        case 15:
-                                                        case "end":
-                                                            return e.stop()
-                                                    }
-                                            }
-                                        ), e)
-                                    }
-                                )));
-                                return function (t) {
-                                    return e.apply(this, arguments)
-                                }
-                            }(),
-                            u = function () {
-                                var e = r.replace("?", "");
-                                return e
-                            }
-                            ,
-                            s = function () {
-                                var e = Fe(Ke().mark((function e(t) {
-                                        var r, n, o, i, a, s;
-                                        return Ke().wrap((function (e) {
-                                                for (; ;)
-                                                    switch (e.prev = e.next) {
-                                                        case 0:
-                                                            return e.next = 2,
-                                                                c(t);
-                                                        case 2:
-                                                            return r = e.sent,
-                                                                n = r.key,
-                                                                o = r.timestamp,
-                                                                i = u(),
-                                                                e.next = 8,
-                                                                crypto.subtle.sign("HMAC", n, (new TextEncoder).encode(i));
-                                                        case 8:
-                                                            return a = e.sent,
-                                                                s = btoa(String.fromCharCode.apply(String, G(new Uint8Array(a)))),
-                                                                e.abrupt("return", {
-                                                                    signature: s,
-                                                                    timestamp: o
-                                                                });
-                                                        case 11:
-                                                        case "end":
-                                                            return e.stop()
-                                                    }
-                                            }
-                                        ), e)
-                                    }
-                                )));
-                                return function (t) {
-                                    return e.apply(this, arguments)
-                                }
-                            }(),
-                            l = i || a(),
-                            e.next = 8,
-                            s(l);
-                    case 8:
-                        return f = e.sent,
-                            p = f.timestamp,
-                            d = f.signature,
-                            e.abrupt("return", {
-                                token: l,
-                                timestamp: p,
-                                signature: d
-                            });
-                    case 12:
-                    case "end":
-                        return e.stop()
-                }
-        }
-    ), e)
-}
-
-function getTokenAndSign() {
-    var t = this
-        , r = arguments;
-    return new Promise((function (n, o) {
             var i = e.apply(t, r);
 
             function a(e) {
@@ -654,6 +513,147 @@ function getTokenAndSign() {
 
             a(void 0)
         }
+        ))
+    }
+}
+
+function e(t) {
+    var r, n, o, i, a, c, u, s, l, f, p, d;
+    return Ke().wrap((function (e) {
+        for (; ;)
+            switch (e.prev = e.next) {
+                case 0:
+                    return r = t.url,
+                        n = t.fetchConfig,
+                        o = t.timestampForTest,
+                        i = t.tokenForTest,
+                        a = function () {
+                            return crypto.randomUUID ? crypto.randomUUID() : (new Date).getTime()
+                        }
+                        ,
+                        c = function () {
+                            var e = Fe(Ke().mark((function e(t) {
+                                var r, n, i, a, c, u, s, l, f, p, d;
+                                return Ke().wrap((function (e) {
+                                    for (; ;)
+                                        switch (e.prev = e.next) {
+                                            case 0:
+                                                return r = "",
+                                                    e.next = 3,
+                                                    crypto.subtle.digest("SHA-256", (new TextEncoder).encode(t));
+                                            case 3:
+                                                for (n = e.sent,
+                                                    i = Array.from(new Uint8Array(n)),
+                                                    a = i.map((function (e) {
+                                                        return e.toString(16).padStart(2, "0")
+                                                    }
+                                                    )).join(""),
+                                                    c = Date.now(),
+                                                    u = o || Math.floor(c / 1e3),
+                                                    s = Math.floor(u / 600 % 32),
+                                                    l = Math.floor(u / 3600 % 32),
+                                                    f = 0; f < 32; f++)
+                                                    p = a[(s + (l + f) * f) % 32],
+                                                        r += p;
+                                                return e.next = 13,
+                                                    crypto.subtle.importKey("raw", (new TextEncoder).encode(r), {
+                                                        name: "HMAC",
+                                                        hash: "SHA-256"
+                                                    }, !1, ["sign"]);
+                                            case 13:
+                                                return d = e.sent,
+                                                    e.abrupt("return", {
+                                                        key: d,
+                                                        timestamp: c
+                                                    });
+                                            case 15:
+                                            case "end":
+                                                return e.stop()
+                                        }
+                                }
+                                ), e)
+                            }
+                            )));
+                            return function (t) {
+                                return e.apply(this, arguments)
+                            }
+                        }(),
+                        u = function () {
+                            var e = r.replace("?", "");
+                            return e
+                        }
+                        ,
+                        s = function () {
+                            var e = Fe(Ke().mark((function e(t) {
+                                var r, n, o, i, a, s;
+                                return Ke().wrap((function (e) {
+                                    for (; ;)
+                                        switch (e.prev = e.next) {
+                                            case 0:
+                                                return e.next = 2,
+                                                    c(t);
+                                            case 2:
+                                                return r = e.sent,
+                                                    n = r.key,
+                                                    o = r.timestamp,
+                                                    i = u(),
+                                                    e.next = 8,
+                                                    crypto.subtle.sign("HMAC", n, (new TextEncoder).encode(i));
+                                            case 8:
+                                                return a = e.sent,
+                                                    s = btoa(String.fromCharCode.apply(String, G(new Uint8Array(a)))),
+                                                    e.abrupt("return", {
+                                                        signature: s,
+                                                        timestamp: o
+                                                    });
+                                            case 11:
+                                            case "end":
+                                                return e.stop()
+                                        }
+                                }
+                                ), e)
+                            }
+                            )));
+                            return function (t) {
+                                return e.apply(this, arguments)
+                            }
+                        }(),
+                        l = i || a(),
+                        e.next = 8,
+                        s(l);
+                case 8:
+                    return f = e.sent,
+                        p = f.timestamp,
+                        d = f.signature,
+                        e.abrupt("return", {
+                            token: l,
+                            timestamp: p,
+                            signature: d
+                        });
+                case 12:
+                case "end":
+                    return e.stop()
+            }
+    }
+    ), e)
+}
+
+function getTokenAndSign() {
+    var t = this
+        , r = arguments;
+    return new Promise((function (n, o) {
+        var i = e.apply(t, r);
+
+        function a(e) {
+            Ue(i, n, o, a, c, "next", e)
+        }
+
+        function c(e) {
+            Ue(i, n, o, a, c, "throw", e)
+        }
+
+        a(void 0)
+    }
     ))
 }
 
@@ -665,7 +665,7 @@ function get_o(url, fetchConfig) {
         let u = c.token,
             s = c.timestamp,
             l = c.signature;
-        return {'Ok-Verify-Token': u, 'Ok-Timestamp': s, 'Ok-Verify-Sign': l};
+        return { 'Ok-Verify-Token': u, 'Ok-Timestamp': s, 'Ok-Verify-Sign': l };
     });
 }
 

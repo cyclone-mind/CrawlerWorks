@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-import requests
+from curl_cffi import requests
+# import requests
 import subprocess
 from functools import partial
 subprocess.Popen = partial(subprocess.Popen, encoding='utf-8')
@@ -7,7 +8,7 @@ import execjs
 
 with open('./02 同花顺.js',encoding='utf-8') as f:
     js_file = f.read()
-enc_cookies = execjs.compile(js_file).call('get_cookie')
+enc_cookies = execjs.compile(js_file).call('window.DDD')
 
 headers = {
     "Accept": "text/html, */*; q=0.01",
@@ -30,6 +31,7 @@ headers = {
 cookies = {
     "v": enc_cookies
 }
+#      https://q.10jqka.com.cn/index/index/board/all/field/zdf/order/desc/page/2/ajax/1/
 url = "https://q.10jqka.com.cn/index/index/board/all/field/zdf/order/desc/page/2/ajax/1/"
 response = requests.get(url, headers=headers, cookies=cookies)
 

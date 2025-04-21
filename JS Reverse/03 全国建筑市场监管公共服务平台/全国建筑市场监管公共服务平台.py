@@ -43,7 +43,7 @@ response = requests.get(
     headers=headers,
 )
 encrypted_data = response.text
-print(encrypted_data)
+# print(encrypted_data)
 
 data = execjs.compile(open('./jzjg.js', encoding='utf-8').read()).call('b', encrypted_data)
 data = json.loads(data)
