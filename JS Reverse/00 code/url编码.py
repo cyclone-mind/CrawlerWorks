@@ -13,4 +13,4 @@ print(query_string) # name=%E5%BC%A0%E4%B8%89&age=20&address=%E5%8C%97%E4%BA%AC%
 
 query_string = 'name=%E5%BC%A0%E4%B8%89&age=20&address=%E5%8C%97%E4%BA%AC%E5%B8%82%E6%B5%B7%E6%B7%80%E5%8C%BA'
 params = urllib.parse.parse_qs(query_string) # 将url字符串转换为字典
-print(params, type(params)) # {'name': ['张三'], 'age': ['20'], 'address': ['北京市海淀区']} <class 'dict'>
+print(params, type(params)) # {'name': ['张三'], 'age': ['20'], 'address': ['北京市海淀区']} <class 'data'>

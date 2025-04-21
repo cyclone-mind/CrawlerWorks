@@ -8,18 +8,10 @@ lerna-debug.log*
 .pnpm-debug.log*
 
 # 特定文件夹
-JS Reverse/15 京东/
-JS Reverse/21 小红书/
-JS Reverse/37 360 天御滑块/
-JS Reverse/38 腾讯天御滑块/
-JS Reverse/39 天翼云移动登录/
-JS Reverse/42 其他/8期考核/
-JS Reverse/43 复习/
-JS Reverse/44 案例站/
-crypto-js/
-orders/
-.idea/
 
+.idea/
+.vscode/
+.venv/
 
 
 # Diagnostic reports (https://nodejs.org/api/report.html)

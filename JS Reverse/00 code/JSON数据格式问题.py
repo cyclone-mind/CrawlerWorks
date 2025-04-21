@@ -1,3 +1,4 @@
+import json
 """
 优志愿案例：
     使用json格式数据当作参数发送请求时，requests库自带的json_data参数会自动将字典dumps成json字符串，但是会出现多处空白的问题。

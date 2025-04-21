@@ -15564,7 +15564,7 @@ require('./env.js')
             t.default.prototype.$local = d.a,
             t.default.prototype.$bus = t.default.prototype.$bus || new t.default,
             t.default.use(s.a),
-            o.a.dispatch("dict/getDictList"),
+            o.a.dispatch("data/getDictList"),
             Object.keys(f).forEach((function(e) {
                 t.default.filter(e, f[e])
             }

@@ -5,7 +5,9 @@
     "@babel/traverse": "^7.26.9",
     "@babel/types": "^7.26.9",
     "crypto-js": "^4.2.0",
-    "node-rsa": "^1.1.1"
+    "gm-crypto": "^0.1.12",
+    "node-rsa": "^1.1.1",
+    "sm-crypto": "^0.3.13"
   },
   "devDependencies": {
     "@babel/core": "^7.26.9"
